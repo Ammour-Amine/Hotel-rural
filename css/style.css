@@ -1,0 +1,300 @@
+:root {
+    --color-principal1: #232323;
+    --color-principal2: #e1bd85;
+}
+
+/* Start General rules*/
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body { 
+    font-family: 'Hind', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    background-color:white;
+    color: var(--color-principal1);
+    font-size: 14px;
+}
+
+.container1 {
+    background-image: url(../images/foto_principal.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+@media (max-width: 768px) {
+    .container1 {
+        width: 750px;
+    }
+    
+}
+
+@media (max-width: 992px) {
+    .container1 {
+        width: 970px;
+    }
+    
+    .header-top-left{
+        width: 100%;
+    }
+
+    .header-center {
+        width: 100%;
+    }
+
+    .header-top-right{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container1 {
+        width: 100%;
+    }
+
+}
+/* End General rules*/
+
+/* Start Header Top*/
+.header-top {
+    background-color: var(--color-principal1);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    opacity: 0.9;
+    z-index: 2;
+}
+
+.header-top-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    max-width: 1170px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.header-top-left {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.header-top-left span, i {
+    margin-right: 15px;
+}
+
+.header-center {
+    color: var(--color-principal2);
+    margin: 25px auto 25px auto;
+    text-align: center;
+}
+
+.header-top-right{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.header-top-right a{
+    padding: 10px;
+}
+
+.header-top-right i,a {
+    color: white;
+}
+
+.links-top ul ul {
+    position: absolute;
+    margin-top: 13px;
+    background-color: var(--color-principal2);
+    color: var(--color-pricipal1);
+    display: none;
+}
+
+.links-top:hover ul ul{
+    display: block;
+}
+
+.links-top ul ul li {
+    padding: 10px 30px;
+}
+
+.links-top ul ul li:hover{
+    background-color: var(--color-principal1);
+    color: var(--color-principal2);
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+
+}
+
+.header-top-right a:hover {
+    
+    background-color: white;
+    color: var(--color-principal1);
+}
+
+.header-top-right a:hover i {
+    color: var(--color-principal1);
+}
+
+/* End Header Top*/
+
+/* Start Header Menu*/
+.header-menu {
+    background-color: var(--color-principal1);
+    opacity: 0.9;
+}
+
+.header-menu nav ul {
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.header-menu nav ul li {
+    line-height: 64px;
+    padding: 0 20px;
+}
+/* End Header Menu*/
+
+/*Start Welcome section*/
+
+.welcome {
+    height:500px;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.welcome span {
+    font-size:40px;
+}
+
+.welcome h1 {
+    font-size: 70px;
+    text-align: center;
+}
+
+.welcome button {
+    background-color: transparent;
+    color: #fff;
+    height: 50px;
+    width: 150px;
+    border-color: #fff;
+    border-width: 2px;
+    border-style: solid;
+    font-weight: bold;
+    font-size: large;
+}
+
+.welcome button:hover {
+    background-color: var(--color-principal2);
+    cursor: pointer;
+}
+/*End Welcome section*/
+
+/*Start main seccion*/
+
+.seccion-apartamentos {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0 40px 0;
+}
+
+.apartamentos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.apartamento {
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--color-principal1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seccion-apartamentos .titulo p {
+    font-size: 26px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.seccion-apartamentos .descripcion {
+    margin-bottom: 20px;
+}
+
+.apartamento .titulo p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.apartamento .precio p {
+    font-size: 15px;
+    color: var(--color-principal2);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.seccion-apartamentos .apartamento .detalles {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 10px 0;    
+}
+
+.apartamento .detalles .num , .apartamento .detalles .superf, .apartamento .detalles .banos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:10px ;
+}
+
+.apartamento .detalles .num p , .apartamento .detalles .superf p, .apartamento .detalles .banos p {
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.btn button {
+    margin-bottom: 15px;
+    background-color: transparent;
+    padding: 10px;
+    border-width: 2px;
+    border-style: solid;
+    font-weight: bold;
+    font-size: 15px;
+    border-color: black;
+}
+
+.btn button:hover {
+    background-color: var(--color-principal2);
+    cursor: pointer;
+    color: white;
+    border: none
+}
+
+/*End main seccion*/
